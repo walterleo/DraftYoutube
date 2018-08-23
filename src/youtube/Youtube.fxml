@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="BASELINE_CENTER" maxHeight="56.0" prefHeight="56.0" prefWidth="1366.0" spacing="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" maxHeight="24.0" maxWidth="80.0" prefHeight="24.0" prefWidth="80.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/yt-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="640.0">
+               <children>
+                  <TextField maxHeight="32.0" maxWidth="575.0" prefHeight="32.0" prefWidth="575.0" promptText="Search" style="-fx-background-color: #ffffff; -fx-border-color: #dddddd; -fx-border-width: 1px;" />
+                  <Button maxHeight="32.0" maxWidth="65.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" style="-fx-background-color: #eeeeee; -fx-border-color: #dddddd; -fx-border-width: 1px;">
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox maxHeight="24.0" prefHeight="24.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="1290.0" layoutY="30.0" maxHeight="24.0" prefHeight="24.0" prefWidth="50.0">
+                     <children>
+                        <MenuBar prefHeight="32.0" prefWidth="50.0" style="-fx-background-color: transparent;" translateX="25.0">
+                           <menus>
+                              <Menu mnemonicParsing="false">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube TV">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-tv.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Gaming">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-gamming.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Music">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-music.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Kids">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-kids.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                 </items>
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/app.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                              </Menu>
+                              <Menu mnemonicParsing="false">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/campana.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="100.0" maxHeight="24.0" maxWidth="200.0" minHeight="24.0" minWidth="200.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Notifications">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/app.png" />
+                                                   </image></ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube TV">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-tv.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Gaming">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-gamming.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Music">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-music.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="YouTube Kids">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-kids.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                 </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/icon.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="My Channel">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../images/miCanal.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Paid membership">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/yt-pago.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Switch account">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/cambiarCuenta.png" />
+                                                   </image></ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <Button graphicTextGap="25.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign out">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets bottom="15.0" left="24.0" right="30.0" top="15.0" />
+                                             </padding>
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/salir.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </graphic>
+                                    </MenuItem>
+                                 </items>
+                              </Menu>
+                           </menus>
+                        </MenuBar>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow color="#0000007b" />
+         </effect>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" maxWidth="240.0" prefWidth="240.0" style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="25.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: transparent;" text="Home">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/home-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="24.0" right="24.0" top="15.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: transparent;" text="Trending">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/trending-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="24.0" right="24.0" top="15.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: transparent;" text="Subscription">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/subscription-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="24.0" right="24.0" top="15.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="678.0" prefWidth="1112.0" style="-fx-background-color: #fafafa;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="105.0" layoutY="78.0" spacing="24.0">
+               <children>
+                  <VBox layoutX="105.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="315.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="525.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="735.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="100.0" layoutY="297.0" spacing="24.0">
+               <children>
+                  <VBox layoutX="105.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="315.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="525.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="735.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="100.0" layoutY="510.0" spacing="24.0">
+               <children>
+                  <VBox layoutX="105.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="315.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="525.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="735.0" layoutY="78.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="210.0" layoutX="105.0" layoutY="78.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/asesoria.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="105.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Chrome Extensions That Are Amazingly Useful!" wrappingWidth="186.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechGumbo" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#666666" layoutX="105.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="296K views 3 months ago" wrappingWidth="186.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
